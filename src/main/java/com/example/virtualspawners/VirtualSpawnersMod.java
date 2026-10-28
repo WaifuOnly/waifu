@@ -284,8 +284,24 @@ public class VirtualSpawnersMod implements ModInitializer {
     }
 
     static ChatFormatting colorOf(String type) {
-        ChatFormatting f = ChatFormatting.getByName(colorName(type));
-        return f != null ? f : ChatFormatting.LIGHT_PURPLE;
+        return switch (colorName(type)) {
+            case "white" -> ChatFormatting.WHITE;
+            case "gray" -> ChatFormatting.GRAY;
+            case "dark_gray" -> ChatFormatting.DARK_GRAY;
+            case "black" -> ChatFormatting.BLACK;
+            case "red" -> ChatFormatting.RED;
+            case "dark_red" -> ChatFormatting.DARK_RED;
+            case "gold" -> ChatFormatting.GOLD;
+            case "yellow" -> ChatFormatting.YELLOW;
+            case "green" -> ChatFormatting.GREEN;
+            case "dark_green" -> ChatFormatting.DARK_GREEN;
+            case "aqua" -> ChatFormatting.AQUA;
+            case "dark_aqua" -> ChatFormatting.DARK_AQUA;
+            case "blue" -> ChatFormatting.BLUE;
+            case "dark_blue" -> ChatFormatting.DARK_BLUE;
+            case "dark_purple" -> ChatFormatting.DARK_PURPLE;
+            default -> ChatFormatting.LIGHT_PURPLE;
+        };
     }
 
     private static String esc(String s) {
