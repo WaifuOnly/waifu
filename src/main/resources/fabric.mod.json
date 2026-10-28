@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "virtualspawners",
+  "version": "${version}",
+  "name": "Virtual Spawners",
+  "description": "Server-side virtual spawners: placeable spawner blocks that store drops and XP instead of spawning mobs. Craftable, vanilla clients can join.",
+  "authors": [
+    "S.Surviabily"
+  ],
+  "license": "MIT",
+  "icon": "assets/virtualspawners/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.virtualspawners.VirtualSpawnersMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IOI",
+    "XCX",
+    "IOI"
+  ],
+  "key": {
+    "I": "minecraft:iron_block",
+    "O": "minecraft:obsidian",
+    "X": "minecraft:bone_block",
+    "C": "minecraft:ender_eye"
+  },
+  "result": {
+    "id": "minecraft:spawner",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "vspawner": "skeleton"
+      },
+      "minecraft:custom_name": {
+        "text": "Skeleton Spawner",
+        "color": "light_purple",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Virtual drop generator. No mobs spawn.",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "Right-click placed spawner to open storage.",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "Shift-right-click with same type to stack.",
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    }
+  }
+}
