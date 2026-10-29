@@ -1,18 +1,46 @@
 {
+  "display": {
+    "icon": {
+      "id": "minecraft:ender_eye"
+    },
+    "title": {
+      "text": "Spawner Engineer",
+      "color": "light_purple"
+    },
+    "description": {
+      "text": "Obtain an Eye of Ender to unlock every Virtual Spawner recipe"
+    },
+    "background": "minecraft:gui/advancements/backgrounds/stone",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
   "criteria": {
-    "tick": {
-      "trigger": "minecraft:tick"
+    "eye": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:ender_eye"
+          }
+        ]
+      }
     }
   },
   "rewards": {
     "recipes": [
-      "virtualspawners:skeleton_spawner",
-      "virtualspawners:zombie_spawner",
-      "virtualspawners:creeper_spawner",
-      "virtualspawners:wither_skeleton_spawner",
       "virtualspawners:blaze_spawner",
+      "virtualspawners:chicken_spawner",
+      "virtualspawners:cow_spawner",
+      "virtualspawners:creeper_spawner",
+      "virtualspawners:enderman_spawner",
+      "virtualspawners:pig_spawner",
+      "virtualspawners:sheep_spawner",
+      "virtualspawners:skeleton_spawner",
       "virtualspawners:slime_spawner",
-      "virtualspawners:enderman_spawner"
+      "virtualspawners:wither_skeleton_spawner",
+      "virtualspawners:zombie_spawner"
     ]
   }
 }

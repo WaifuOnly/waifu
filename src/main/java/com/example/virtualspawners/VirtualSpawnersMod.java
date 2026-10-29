@@ -117,6 +117,14 @@ public class VirtualSpawnersMod implements ModInitializer {
                     "slime_ball", 12).color("green"));
             t.put("enderman", new TypeCfg("Enderman Spawner", "minecraft:enderman", "ender_pearl", 40,
                     "ender_pearl", 2).color("dark_purple"));
+            t.put("pig", new TypeCfg("Pig Spawner", "minecraft:pig", "porkchop", 8,
+                    "porkchop", 6).color("light_purple"));
+            t.put("cow", new TypeCfg("Cow Spawner", "minecraft:cow", "beef", 8,
+                    "beef", 6, "leather", 3).color("gray"));
+            t.put("sheep", new TypeCfg("Sheep Spawner", "minecraft:sheep", "white_wool", 8,
+                    "mutton", 4, "white_wool", 6).color("white"));
+            t.put("chicken", new TypeCfg("Chicken Spawner", "minecraft:chicken", "chicken", 8,
+                    "chicken", 4, "feather", 6, "egg", 3).color("yellow"));
             return t;
         }
     }
