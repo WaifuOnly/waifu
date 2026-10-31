@@ -125,6 +125,10 @@ public class VirtualSpawnersMod implements ModInitializer {
                     "mutton", 4, "white_wool", 6).color("white"));
             t.put("chicken", new TypeCfg("Chicken Spawner", "minecraft:chicken", "chicken", 8,
                     "chicken", 4, "feather", 6, "egg", 3).color("yellow"));
+            t.put("iron_golem", new TypeCfg("Iron Golem Spawner", "minecraft:iron_golem", "iron_ingot", 20,
+                    "iron_ingot", 5, "poppy", 1).color("gray"));
+            t.put("shulker", new TypeCfg("Shulker Spawner", "minecraft:shulker", "shulker_shell", 20,
+                    "shulker_shell", 0.5).color("light_purple"));
             return t;
         }
     }
